@@ -517,3 +517,103 @@ h2 {
   text-decoration: none;
   text-align: center;
 }
+
+.fromus-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Distribute the content evenly */
+}
+
+.fromus-content {
+  flex: 0 1 auto; /* Allow items to grow, but don't shrink or grow beyond their content */
+}
+
+.fromus-image {
+  position: relative;
+}
+
+.fromus-image img {
+  max-width: 100%;
+  height: auto;
+  width: 100%; /* Ensure the image takes the full width of its container */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+.image-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  height: 225px;
+  padding: 10px;
+  color: #ffffff;
+  margin-top: 20px;
+  background-color: #f9bec2; /* Set the background color */
+}
+
+.footer-box {
+  display: flex;
+  padding: 10px;
+  height: 137.4px;
+}
+
+.footer-list {
+  flex: 1; /* Each list takes equal space */
+  margin: 10px; /* Adjust margin as needed */
+  text-align: left;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #6d6d6d;
+}
+
+.footer-list h3 {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 25px; /* Adjust the font size as needed */
+  margin-bottom: 10px; /* Add margin below h3 */
+}
+
+.footer-list p {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #6d6d6d; /* Update text color */
+  font-size: 20px;
+  margin-bottom: 5px; /* Add margin between list items */
+}
+
+.footer-list ul {
+  list-style: none;
+  padding-left: 0; /* Remove default padding for the list */
+}
+
+.footer-list li {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #6d6d6d; /* Update text color */
+  font-size: 20px;
+  margin-bottom: 5px; /* Add margin between list items */
+}
+
+.footer-icons {
+  display: inline-block; /* Display icons side by side */
+  margin-right: 10px; /* Add space between icons */
+}
+
+.footer-icons img {
+  width: 80%; /* Adjust the width of the icons as needed */
+  height: 80%; /* Adjust the height of the icons as needed */
+}
