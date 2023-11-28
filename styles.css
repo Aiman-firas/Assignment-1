@@ -617,3 +617,40 @@ h2 {
   width: 80%; /* Adjust the width of the icons as needed */
   height: 80%; /* Adjust the height of the icons as needed */
 }
+
+.header-cupcake {
+  position: relative;
+  text-align: center;
+}
+
+.faded-image {
+  width: 100%; /* Ensure the image takes the full width of its container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block;
+  opacity: 0.6; /* Set the opacity to your desired level (0.0 to 1.0) */
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter-Regular", Helvetica;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.header-text h3 {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.header-cupcake-box {
+  margin-bottom: 20px;
+}
