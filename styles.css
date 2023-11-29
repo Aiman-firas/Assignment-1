@@ -373,12 +373,12 @@ template {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center; /* Align items vertically in the center */
+  align-items: center;
 }
 
 .row-header a {
   color: black;
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
 }
 
 .row-header a:hover {
@@ -427,17 +427,16 @@ h2 {
 .bestseller-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; /* Add this line to distribute cupcakes equally */
+  justify-content: space-evenly;
 }
 
 .inside-image {
   width: 281px;
   height: 183px;
   padding-bottom: 1px;
-  overflow: hidden; /* Ensure the border-radius is applied */
+  overflow: hidden;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  /* Add styling for your image, e.g., background-image, background-size, etc. */
 }
 
 .inside-image {
@@ -446,24 +445,24 @@ h2 {
 
 .rating {
   position: absolute;
-  top: 10px; /* Adjust the top value to position it properly */
-  right: 10px; /* Adjust the right value to position it properly */
+  top: 10px;
+  right: 10px;
   display: flex;
   align-items: center;
   color: #ffffff;
 }
 
 .star-icon {
-  font-size: 20px; /* Adjust the font size as needed */
+  font-size: 20px;
   font-weight: 600;
-  margin-left: 5px; /* Add some space between the star and the rating text */
+  margin-left: 5px;
   color: gold;
 }
 
 .rating-text {
   font-family: "Inter-Regular", Helvetica;
   font-weight: 600;
-  font-size: 16px; /* Adjust the font size as needed */
+  font-size: 16px;
 }
 
 .bestseller-cupcake {
@@ -484,8 +483,8 @@ h2 {
 }
 
 .inside-cupcake ul {
-  list-style: none; /* Remove list-style (bullet points) */
-  padding-left: 15px; /* Remove default padding for the list */
+  list-style: none;
+  padding-left: 15px;
 }
 
 .inside-cupcake li {
@@ -521,11 +520,11 @@ h2 {
 .fromus-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; /* Distribute the content evenly */
+  justify-content: space-around;
 }
 
 .fromus-content {
-  flex: 0 1 auto; /* Allow items to grow, but don't shrink or grow beyond their content */
+  flex: 0 1 auto;
 }
 
 .fromus-image {
@@ -535,8 +534,8 @@ h2 {
 .fromus-image img {
   max-width: 100%;
   height: auto;
-  width: 100%; /* Ensure the image takes the full width of its container */
-  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  width: 100%;
+  object-fit: cover;
 }
 
 .image-text {
@@ -559,7 +558,7 @@ h2 {
   padding: 10px;
   color: #ffffff;
   margin-top: 20px;
-  background-color: #f9bec2; /* Set the background color */
+  background-color: #f9bec2;
 }
 
 .footer-box {
@@ -569,8 +568,8 @@ h2 {
 }
 
 .footer-list {
-  flex: 1; /* Each list takes equal space */
-  margin: 10px; /* Adjust margin as needed */
+  flex: 1;
+  margin: 10px;
   text-align: left;
 }
 
@@ -583,39 +582,38 @@ h2 {
   font-family: "Inter-Regular", Helvetica;
   font-weight: 500;
   color: #ffffff;
-  font-size: 25px; /* Adjust the font size as needed */
-  margin-bottom: 10px; /* Add margin below h3 */
+  margin-bottom: 10px;
 }
 
 .footer-list p {
   font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
-  color: #6d6d6d; /* Update text color */
+  color: #6d6d6d;
   font-size: 20px;
-  margin-bottom: 5px; /* Add margin between list items */
+  margin-bottom: 5px;
 }
 
 .footer-list ul {
   list-style: none;
-  padding-left: 0; /* Remove default padding for the list */
+  padding-left: 0;
 }
 
 .footer-list li {
   font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
-  color: #6d6d6d; /* Update text color */
+  color: #6d6d6d;
   font-size: 20px;
-  margin-bottom: 5px; /* Add margin between list items */
+  margin-bottom: 5px;
 }
 
 .footer-icons {
-  display: inline-block; /* Display icons side by side */
-  margin-right: 10px; /* Add space between icons */
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .footer-icons img {
-  width: 80%; /* Adjust the width of the icons as needed */
-  height: 80%; /* Adjust the height of the icons as needed */
+  width: 80%;
+  height: 80%;
 }
 
 .header-cupcake {
@@ -624,10 +622,10 @@ h2 {
 }
 
 .faded-image {
-  width: 100%; /* Ensure the image takes the full width of its container */
-  height: auto; /* Maintain the aspect ratio */
+  width: 100%;
+  height: auto;
   display: block;
-  opacity: 0.6; /* Set the opacity to your desired level (0.0 to 1.0) */
+  opacity: 0.6;
 }
 
 .header-text {
