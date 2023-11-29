@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+}
+
+.line {
+  margin: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+.aboutUs-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.aboutUs-text {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.owner-image {
+  width: 35%;
+}
