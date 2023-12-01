@@ -3,6 +3,10 @@
   margin-bottom: 20px;
 }
 
+.description-form form {
+  margin: 20px;
+}
+
 .block {
   width: 900px;
   margin: 0 auto;
@@ -35,13 +39,17 @@
   flex-wrap: wrap;
 }
 
-.button-row {
+.button-row-size,
+.button-row-frosting,
+.button-row-toppers {
   display: flex;
   justify-content: space-evenly;
   margin-top: 10px;
 }
 
-.button-row button {
+.button-row-size button,
+.button-row-frosting button,
+.button-row-toppers button {
   margin: 0 5px 10px;
   padding: 15px 30px;
   font-size: 20px;
@@ -51,12 +59,9 @@
   cursor: pointer;
 }
 
-.button-row button:hover {
-  background-color: #f9bec2;
-  color: #ffffff;
-}
-
-.button-row button.active {
+.button-row-size button.selected,
+.button-row-frosting button.selected,
+.button-row-toppers button.selected {
   background-color: #f9bec2;
   color: #ffffff;
 }
@@ -111,10 +116,6 @@
   border: none;
   color: #fff;
   cursor: pointer;
-}
-
-.submit-button button:hover {
-  background-color: #4caf50;
 }
 
 .line {
