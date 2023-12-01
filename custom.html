@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="custom.css" />
+
     <title>Assignment 1</title>
   </head>
   <body>
@@ -43,11 +44,29 @@
     <div class="container">
       <div class="block">
         <div class="rectangle">
+          <h3>Cupcake Name</h3>
+        </div>
+      </div>
+      <div class="description-form">
+        <form id="cupcakeNameForm">
+          <input
+            type="text"
+            id="cupcakeName"
+            placeholder="Enter Cupcake Name (max 10 characters)"
+            maxlength="10"
+          />
+          <p id="cupcakeNameCounter">Characters left: 10</p>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="block">
+        <div class="rectangle">
           <h3>Size</h3>
         </div>
       </div>
       <div class="button-box">
-        <div class="button-row">
+        <div class="button-row-size">
           <button>One</button>
           <button>Half-Dozen</button>
           <button>Dozen</button>
@@ -61,7 +80,7 @@
         </div>
       </div>
       <div class="button-box">
-        <div class="button-row">
+        <div class="button-row-frosting">
           <button>Vanilla</button>
           <button>Chocolate</button>
           <button>Strawberry</button>
@@ -78,7 +97,7 @@
         </div>
       </div>
       <div class="button-box">
-        <div class="button-row">
+        <div class="button-row-toppers">
           <button>2D</button>
           <button>3D</button>
           <button>Toy</button>
@@ -102,27 +121,6 @@
         </form>
       </div>
     </div>
-    <script>
-      // JavaScript to limit characters/words in the description textarea
-      const maxCharacters = 200;
-      const descriptionTextarea = document.getElementById("designDescription");
-      const counter = document.getElementById("counter");
-
-      descriptionTextarea.addEventListener("input", function () {
-        const currentLength = this.value.length;
-        const remainingCharacters = maxCharacters - currentLength;
-
-        counter.textContent =
-          remainingCharacters >= 0
-            ? `Characters/words left: ${remainingCharacters}`
-            : "Exceeded limit!";
-
-        if (remainingCharacters < 0) {
-          this.value = this.value.slice(0, maxCharacters);
-        }
-      });
-    </script>
-
     <div class="container">
       <div class="block">
         <div class="rectangle">
@@ -138,9 +136,7 @@
             name="fileInput"
             accept=".png, .jpg, .jpeg"
           />
-          <button type="button" id="deleteFileButton" onclick="deleteFile()">
-            Delete
-          </button>
+          <button type="button" id="deleteFileButton">Delete</button>
         </form>
       </div>
     </div>
@@ -155,30 +151,6 @@
         <button id="addToCartButton">Add To Cart</button>
       </div>
     </div>
-    <script>
-      const fileInput = document.getElementById("fileInput");
-      const deleteFileButton = document.getElementById("deleteFileButton");
-
-      fileInput.addEventListener("change", function () {
-        const allowedExtensions = /(\.png|\.jpg|\.jpeg)$/i;
-        if (!allowedExtensions.exec(this.value)) {
-          alert(
-            "Please choose an image file with a valid extension: .png, .jpg, .jpeg"
-          );
-          this.value = "";
-        }
-      });
-
-      function deleteFile() {
-        const fileInput = document.getElementById("fileInput");
-        fileInput.value = "";
-      }
-
-      const addToCartButton = document.getElementById("addToCartButton");
-      addToCartButton.addEventListener("click", function () {
-        alert("Item added to cart!");
-      });
-    </script>
     <div class="line"></div>
     <h2 class="like-heading">You may also like...</h2>
     <div class="bestseller-box">
@@ -324,5 +296,6 @@
         </div>
       </div>
     </footer>
+    <script src="custom.js"></script>
   </body>
 </html>
