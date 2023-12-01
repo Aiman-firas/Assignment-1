@@ -350,6 +350,52 @@ template {
   display: none;
 }
 
+/*Splash Screen */
+.intro-logo-header span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier", monospace;
+}
+
+.intro {
+  position: fixed;
+  z-index: 1;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: #2b2d42;
+  transition: 1s;
+}
+
+.intro-logo-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d9dcd6;
+}
+
+.intro-logo {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+}
+
+.intro-logo.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.intro-logo.fade {
+  bottom: 0;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+
 /* Own CSS styling */
 
 .box {
