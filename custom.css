@@ -118,6 +118,10 @@
   cursor: pointer;
 }
 
+.submit-button button:hover {
+  background-color: #4caf50;
+}
+
 .line {
   margin: 10px auto;
   width: 50%;
