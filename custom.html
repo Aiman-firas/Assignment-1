@@ -117,7 +117,6 @@
             ? `Characters/words left: ${remainingCharacters}`
             : "Exceeded limit!";
 
-        // Trim the content if it exceeds the limit
         if (remainingCharacters < 0) {
           this.value = this.value.slice(0, maxCharacters);
         }
@@ -170,10 +169,9 @@
         }
       });
 
-      // Function to delete the selected file
       function deleteFile() {
         const fileInput = document.getElementById("fileInput");
-        fileInput.value = ""; // Clear the file input
+        fileInput.value = "";
       }
 
       const addToCartButton = document.getElementById("addToCartButton");
@@ -201,7 +199,9 @@
           </ul>
           <div class="order-box">
             <div class="order-now-rectangle">
-              <a href="#" class="order-now">Order Now</a>
+              <a href="order.html?cupcake=caramel" class="order-now"
+                >Order Now</a
+              >
             </div>
           </div>
         </div>
@@ -223,7 +223,9 @@
           </ul>
           <div class="order-box">
             <div class="order-now-rectangle">
-              <a href="#" class="order-now">Order Now</a>
+              <a href="order.html?cupcake=vanilla" class="order-now"
+                >Order Now</a
+              >
             </div>
           </div>
         </div>
@@ -245,7 +247,9 @@
           </ul>
           <div class="order-box">
             <div class="order-now-rectangle">
-              <a href="#" class="order-now">Order Now</a>
+              <a href="order.html?cupcake=red-velvet" class="order-now"
+                >Order Now</a
+              >
             </div>
           </div>
         </div>
@@ -267,7 +271,9 @@
           </ul>
           <div class="order-box">
             <div class="order-now-rectangle">
-              <a href="#" class="order-now">Order Now</a>
+              <a href="order.html?cupcake=cookies-cream" class="order-now"
+                >Order Now</a
+              >
             </div>
           </div>
         </div>
