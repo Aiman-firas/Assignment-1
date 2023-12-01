@@ -197,20 +197,33 @@ function handleButtonClick(clickedButton, categorySelector) {
 }
 
 function addToCart() {
-  console.log("Adding items to cart...");
   const cupcakeName = document.querySelector(".cupcake-name").textContent;
   const cupcakePriceString =
     document.querySelector(".cupcake-price").textContent;
-  const cupcakeSize = document.querySelector(
+  const cupcakeSizeButton = document.querySelector(
     ".select-size button.selected"
-  ).textContent;
-  const cupcakeFrostingType = document.querySelector(
+  );
+  const cupcakeFrostingTypeButton = document.querySelector(
     ".select-frosting button.selected"
-  ).textContent;
-  const cupcakeTopper = document.querySelector(
+  );
+  const cupcakeTopperButton = document.querySelector(
     ".select-topper button.selected"
-  ).textContent;
+  );
   const numberOfCandles = document.getElementById("candlesQuantity").value;
+
+  // Check if all required buttons are selected
+  if (
+    !cupcakeSizeButton ||
+    !cupcakeFrostingTypeButton ||
+    !cupcakeTopperButton
+  ) {
+    alert("Please select options for all categories.");
+    return;
+  }
+
+  const cupcakeSize = cupcakeSizeButton.textContent;
+  const cupcakeFrostingType = cupcakeFrostingTypeButton.textContent;
+  const cupcakeTopper = cupcakeTopperButton.textContent;
 
   const cupcakePrice = parseFloat(cupcakePriceString.slice(1));
 
