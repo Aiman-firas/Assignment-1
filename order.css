@@ -65,16 +65,13 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.submit-button {
-  width: max-content;
-}
-
 .submit-button button {
   padding: 10px;
   background-color: #f9bec2;
   color: #fff;
   border: none;
   cursor: pointer;
+  width: -webkit-fill-available;
 }
 
 .submit-button button:hover {
@@ -91,4 +88,13 @@
   margin: 20px;
   text-align: center;
   font-weight: 500;
+}
+
+.order-image {
+  width: 281px;
+  height: 183px;
+  padding-bottom: 1px;
+  overflow: hidden;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }

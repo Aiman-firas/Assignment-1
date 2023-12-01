@@ -63,6 +63,21 @@ document.addEventListener("DOMContentLoaded", function () {
       rating: "4.6",
       name: "Luscious Lemon Zest",
     },
+    wedding: {
+      image: "img/Wedding.jpeg",
+      rating: "5.0",
+      name: "Wedding & Engagement",
+    },
+    birthday: {
+      image: "img/Birthday.jpeg",
+      rating: "5.0",
+      name: "Birthday",
+    },
+    anniversary: {
+      image: "img/Anniversary.jpeg",
+      rating: "5.0",
+      name: "Anniversary",
+    },
   };
 
   setDetails(cupcakeDetails[cupcakeType]);
