@@ -217,7 +217,7 @@ function addToCart() {
     !cupcakeFrostingTypeButton ||
     !cupcakeTopperButton
   ) {
-    alert("Please select options for all categories.");
+    alert("Please select 1 option for each category.");
     return;
   }
 
