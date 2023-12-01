@@ -1,59 +1,79 @@
-.select-block {
+.big-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.cupcake-container {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: max-content;
+}
+
+.inside-image {
+  width: 400px;
+  height: auto;
+}
+
+.cupcake-name {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #59322c;
+  font-size: 20px;
   text-align: center;
+}
+
+.cupcake-price {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cupcake-order-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-block {
+  margin-bottom: 20px;
 }
 
 .select-options {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
-.options-row {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 10px;
-}
-
-.options-row button {
-  margin: 0 5px 10px;
-  padding: 15px 30px;
-  font-size: 20px;
-  background-color: #ffffff;
-  border: 2px solid #000000;
-  color: #59322d;
+.select-options button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #eee;
+  border: none;
   cursor: pointer;
 }
 
-.options-row button:hover {
-  background-color: #f9bec2;
-  color: #ffffff;
-}
-
-.options-row button.active {
-  background-color: #f9bec2;
-  color: #ffffff;
+.container {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .block {
-  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .submit-button {
-  width: 100%;
-  max-width: 900px;
-  margin: 20px auto;
-  text-align: center;
+  width: max-content;
 }
 
 .submit-button button {
-  padding: 15px 30px;
-  font-size: 18px;
+  padding: 10px;
   background-color: #f9bec2;
-  border: none;
   color: #fff;
+  border: none;
   cursor: pointer;
 }
 

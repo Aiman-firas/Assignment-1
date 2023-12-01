@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="order.css" />
+    <script src="order.js"></script>
     <title>Assignment 1</title>
   </head>
   <body>
@@ -27,11 +28,20 @@
         </div>
       </div>
     </div>
-    <div class="order-container">
-      <div class="order-img"><src img=""></src></div>
-      <div class="cucpcake-name"></div>
-      <div class="cucpcake-star"></div>
-      <div class="cupcake-price"></div>
+    <div class="big-container">
+      <div class="cupcake-container">
+        <div class="inside-image">
+          <img src="img/Caramel-Cupcake.jpeg" />
+          <div class="cupcake-details">
+            <div class="rating">
+              <span class="rating-text"></span>
+              <span class="star-icon">&#9733;</span>
+            </div>
+            <div class="cupcake-name"></div>
+          </div>
+        </div>
+        <div class="cupcake-price">$3.75</div>
+      </div>
       <div class="cupcake-order-box">
         <div class="select-block">
           <h3>Select Size</h3>
@@ -71,23 +81,18 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="block">
-        <div class="rectangle">
-          <h3>Add To Cart</h3>
+        <div class="container">
+          <div class="submit-button">
+            <button id="addToCartButton">Add To Cart</button>
+          </div>
         </div>
-      </div>
-      <div class="submit-button">
-        <button id="addToCartButton">Add To Cart</button>
       </div>
     </div>
     <h2 class="like-heading">You may also like...</h2>
     <div class="bestseller-box">
       <div class="bestseller-cupcake">
         <div class="inside-cupcake">
-          <div class="inside-image">
+          <div class="order-image">
             <img src="img/Caramel-Cupcake.jpeg" />
             <div class="rating">
               <span class="rating-text">5.0</span>
@@ -109,7 +114,7 @@
       </div>
       <div class="bestseller-cupcake">
         <div class="inside-cupcake">
-          <div class="inside-image">
+          <div class="order-image">
             <img src="img/Vanilla-Cupcake.webp" />
             <div class="rating">
               <span class="rating-text">4.9</span>
@@ -131,7 +136,7 @@
       </div>
       <div class="bestseller-cupcake">
         <div class="inside-cupcake">
-          <div class="inside-image">
+          <div class="order-image">
             <img src="img/Velvet-Cupcake.jpg" />
             <div class="rating">
               <span class="rating-text">4.8</span>
@@ -153,7 +158,7 @@
       </div>
       <div class="bestseller-cupcake">
         <div class="inside-cupcake">
-          <div class="inside-image">
+          <div class="order-image">
             <img src="img/Oreo-Cupcake.webp" />
             <div class="rating">
               <span class="rating-text">4.8</span>
