@@ -520,6 +520,11 @@ h2 {
   box-shadow: 0px 4px 4px #f9bec2;
   flex-direction: column;
   margin: 30px;
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.bestseller-cupcake:hover {
+  transform: scale(1.05); /* Scale up by 5% on hover */
 }
 
 .inside-cupcake {
