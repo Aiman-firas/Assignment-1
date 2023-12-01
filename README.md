@@ -13,51 +13,38 @@ The design process for the Cupcake Shop website is centered around creating a de
 • Understand the need for a visually appealing and intuitive interface that reflects the charm of the physical cupcake shop.
 • Implement an online ordering system with customization options, secure payment gateways, and order confirmation emails.
 • Create visually appealing menu sections with high-quality images
-• Ensure the website is responsive to provide an optimal experience across various devices, including desktops, tablets, and smartphones.
+• Ensure the website is responsive to provide an optimal experience across various devices, including desktops and smartphones.
 
 Features
-• Home Page (Logo, Search Bar, Shopping Cart, Profile)
-o Close up shot of a Cupcake greeting the customers
-o Arrow Left / Right to move through the different Cupcakes to show the customers what the cupcakes would look like)
-o Bestsellers (4 Bestselling Cupcakes and its rating to shows the quality of the work done)
-o Our Advantages (3 reasons why our cupcake is better than other stores)
-o Footer (Opening Hours / About Company / Help / Socials)
-• Cupcake Page (Cupcakes with Price:Size) [$3.75:Per Cupcake] [$21.50:Dozen] [$41.50:Dozen]
-o 12 Different Cupcake
-o Classic Caramel
-o S’mores Sensation
-o Chocolate Euphoria
-o Strawberry Bliss
-o Cookies & Cream
-o Classic Vanilla Dream
-o Espresso Love
-o Salted Caramel Bliss
-o Blueberry Burst
-o Coconut Paradise
-o Red Velvet Elegance
-o Luscious Lemon Zest
-• Special Occasions Cupcakes (Cupcakes with Price: Size) [$3.75:Per Cupcake] [$21.50:Dozen] [$41.50:Dozen]
-o Wedding & Engagement
-o Birthdays
-o Anniversaries
-• Order Page (Selection of Choices)
-o Size
-o Type Frosting
-o Topper
-o No. of Candles
-o You May Also Like Section (4 Other cupcakes) (Allow customers to choose other cupcakes that are to their liking)
-• Custom Cupcake Page (Design your own cupcake and with many different choices)
-o Size
-o Type of Frosting / Flavour
-o Topper
-o Design Description Box (Customer can describe what the design on the cupcake would look like)
-o Explanatory File Section (Customer can choose a image file to easily shows what the design on the cupcake they want it to look like)
-• Add to Cart Button (Sent to Order Page)
-• Add to Cart Button on Order Page (Once click there will be a pop-up of 1/2/3… depending on the number of items in the cart)
-• About Us Page (About Toronto Cupcake / Owner / How it came to be)
-• Contact Us Page (Tel. no / Opening Hours / Map of Store Location)
-• Privacy Policy Page (Policy of the Website)
-• Terms and Conditions (NIL – Original Website don’t have)
-• Shopping Cart Page (Shows the items that has been added to the cart – Item Name / Size Chosen / Price / Quantity / Subtotal)
-o Total price of all the items
-o Checkout Button
+
+- Feature 1 - Allow users to navigate the website back and forth through the Headers (Website Logo,Cupcake,Special,Custom,AboutUs,Cart,Profile)
+
+- Feature 2 - User can nivagate through Cupcake through clicking on Cupcake Header / Special Header / Custom Header
+- Feature 3 - User can choose any of the Cupcakes and click on the "Order Now" button to nagivate to the Order Now Page
+
+- Feature 4 - In the Order Page, User are allowed to choose only 1 option for each Category i.e Size / Frosting Type / Topper in Order Page / Custom Page
+
+- Feature 5 - In the Custom Page, similarly the User are allowed to choose 1 option for each category and type out a detailed explanation to what the design they want on the cupcake.
+
+- Feature 6 - Allow user to add a image file to know more about the detail description/user's wants
+
+- Feature 6 - By Clicking on the "Add to Cart" button in Order Page, the user will then be navigated to the Cart Page where they are able to change the quantity of candles and also the quantity of the amount of cupcakes bought at the same time see the whole summary of what they have added into the cart
+
+- Feature 7 - The price will be automatically changed depending on User's Input and Checking Out will submit and reset the whole page
+- Feature 8 - User can Log In/Sign Up in the Profile Icon on the top right hand corner
+
+Testing (Responsive)
+
+1.All Pages: - Go to any page - Go to inspect by right-clicking - Change the Dimensions to any of the Mobile Phones Dimensions != Tablet - See if there is any display that is weirdly displayed on the website - Try clicking "Order Now" / "Add to Cart" / Remove Item / Add Quantity / Checkout to see if there is any error
+
+Credits
+
+- The text/font/size/colour scheme/ was reffered from My Own DP Wireframe https://www.figma.com/file/3BJSCsGtqK7U9rHhYtJI3s/FED_S10258376_Aiman_Assgn1_DesktopWireframe-(Copy)?type=design&node-id=0%3A1&mode=design&t=JJDshjtpFljGgCOO-1
+
+- The Splash Screen was copied from Conor Bailey : https://www.youtube.com/watch?v=2ak37WrbSDg
+
+- The Profile Page was copied from AsmrProg-Yt : https://github.com/AsmrProg-YT/Modern-Login
+
+- The custom.js was fully copied from ChatGpt https://chat.openai.com/share/25351b2f-c5c7-45b4-a423-b66223f49583
+
+- The cart.js where the code : itemElement.innerHTML = ``; was copied from ChatGpt
