@@ -41,114 +41,116 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="block">
-        <div class="rectangle">
-          <h3>Cupcake Name</h3>
+    <div class="custom-container">
+      <div class="container">
+        <div class="block">
+          <div class="rectangle">
+            <h3>Cupcake Name</h3>
+          </div>
+        </div>
+        <div class="description-form">
+          <form id="cupcakeNameForm">
+            <input
+              type="text"
+              id="cupcakeName"
+              placeholder="Enter Cupcake Name (max 10 characters)"
+              maxlength="10"
+            />
+            <p id="cupcakeNameCounter">Characters left: 10</p>
+          </form>
         </div>
       </div>
-      <div class="description-form">
-        <form id="cupcakeNameForm">
-          <input
-            type="text"
-            id="cupcakeName"
-            placeholder="Enter Cupcake Name (max 10 characters)"
-            maxlength="10"
-          />
-          <p id="cupcakeNameCounter">Characters left: 10</p>
-        </form>
-      </div>
-    </div>
-    <div class="container">
-      <div class="block">
-        <div class="rectangle">
-          <h3>Size</h3>
+      <div class="container">
+        <div class="block">
+          <div class="rectangle">
+            <h3>Size</h3>
+          </div>
+        </div>
+        <div class="button-box">
+          <div class="button-row-size">
+            <button>One</button>
+            <button>Half-Dozen</button>
+            <button>Dozen</button>
+          </div>
         </div>
       </div>
-      <div class="button-box">
-        <div class="button-row-size">
-          <button>One</button>
-          <button>Half-Dozen</button>
-          <button>Dozen</button>
+      <div class="container">
+        <div class="block">
+          <div class="rectangle">
+            <h3>Frosting Type & Flavour</h3>
+          </div>
+        </div>
+        <div class="button-box">
+          <div class="button-row-frosting">
+            <button>Vanilla</button>
+            <button>Chocolate</button>
+            <button>Strawberry</button>
+            <button>Caramel</button>
+            <button>Espresso</button>
+            <button>S'Mores</button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="block">
-        <div class="rectangle">
-          <h3>Frosting Type & Flavour</h3>
+      <div class="container">
+        <div class="block">
+          <div class="rectangle">
+            <h3>Toppers</h3>
+          </div>
+        </div>
+        <div class="button-box">
+          <div class="button-row-toppers">
+            <button>2D</button>
+            <button>3D</button>
+            <button>Toy</button>
+          </div>
         </div>
       </div>
-      <div class="button-box">
-        <div class="button-row-frosting">
-          <button>Vanilla</button>
-          <button>Chocolate</button>
-          <button>Strawberry</button>
-          <button>Caramel</button>
-          <button>Espresso</button>
-          <button>S'Mores</button>
+      <div class="container">
+        <div class="block">
+          <div class="rectangle">
+            <h3>Design Description</h3>
+          </div>
+        </div>
+        <div class="description-form">
+          <form id="designDescriptionForm">
+            <textarea
+              id="designDescription"
+              rows="4"
+              placeholder="Type your description (max 200 characters/words)"
+            ></textarea>
+            <p id="counter">Characters/words left: 200</p>
+          </form>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="block">
-        <div class="rectangle">
-          <h3>Toppers</h3>
+      <div class="container">
+        <div class="block">
+          <div class="rectangle">
+            <h3>Explanatory File</h3>
+          </div>
+        </div>
+        <div class="file-import">
+          <form id="explanatoryFileForm">
+            <label for="fileInput">Choose File (PNG, JPG, JPEG):</label>
+            <input
+              type="file"
+              id="fileInput"
+              name="fileInput"
+              accept=".png, .jpg, .jpeg"
+            />
+            <button type="button" id="deleteFileButton">Delete</button>
+          </form>
         </div>
       </div>
-      <div class="button-box">
-        <div class="button-row-toppers">
-          <button>2D</button>
-          <button>3D</button>
-          <button>Toy</button>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="block">
-        <div class="rectangle">
-          <h3>Design Description</h3>
-        </div>
-      </div>
-      <div class="description-form">
-        <form id="designDescriptionForm">
-          <textarea
-            id="designDescription"
-            rows="4"
-            placeholder="Type your description (max 200 characters/words)"
-          ></textarea>
-          <p id="counter">Characters/words left: 200</p>
-        </form>
-      </div>
-    </div>
-    <div class="container">
-      <div class="block">
-        <div class="rectangle">
-          <h3>Explanatory File</h3>
-        </div>
-      </div>
-      <div class="file-import">
-        <form id="explanatoryFileForm">
-          <label for="fileInput">Choose File (PNG, JPG, JPEG):</label>
-          <input
-            type="file"
-            id="fileInput"
-            name="fileInput"
-            accept=".png, .jpg, .jpeg"
-          />
-          <button type="button" id="deleteFileButton">Delete</button>
-        </form>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="block">
-        <div class="rectangle">
-          <h3>Add To Cart</h3>
+      <div class="container">
+        <div class="block">
+          <div class="rectangle">
+            <h3>Add To Cart</h3>
+          </div>
         </div>
-      </div>
-      <div class="submit-button">
-        <button id="addToCartButton">Add To Cart</button>
+        <div class="submit-button">
+          <button id="addToCartButton">Add To Cart</button>
+        </div>
       </div>
     </div>
     <div class="line"></div>

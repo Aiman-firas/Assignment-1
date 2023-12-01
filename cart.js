@@ -48,10 +48,10 @@ function displayCartItems() {
         Topper: ${item.topper}<br>
         No. of Candles: <input type="number" min="1" value="${
           item.candles
-        }" onchange="updateCandlesQuantity(${index}, this)">
+        }" onchange="updateCandlesQuantity(${index}, this)"><br>
         Quantity: <input type="number" min="1" value="${
           item.quantity
-        }" onchange="updateQuantity(${index}, this)">
+        }" onchange="updateQuantity(${index}, this)"><br>
       </div>
       <div>
         Price: $${(itemPrice * item.quantity).toFixed(2)}<br>

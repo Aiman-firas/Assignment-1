@@ -103,3 +103,30 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
+
+@media screen and (max-width: 480px) {
+  .big-container {
+    flex-direction: column;
+  }
+
+  .cupcake-container {
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-inline: auto;
+  }
+
+  .cupcake-order-box {
+    margin: auto;
+  }
+
+  .inside-image {
+    width: 100%;
+  }
+
+  .select-options button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+}
