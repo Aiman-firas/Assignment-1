@@ -54,6 +54,11 @@
   cursor: pointer;
 }
 
+.select-options button.selected {
+  background-color: #f9bec2;
+  color: #fff;
+}
+
 .container {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
