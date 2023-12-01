@@ -17,6 +17,19 @@ body {
   height: 100vh;
 }
 
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.back-arrow:hover {
+  color: #f9bec2;
+}
+
 .container {
   background-color: #fff;
   border-radius: 30px;
