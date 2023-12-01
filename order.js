@@ -151,10 +151,9 @@ function updateCupcakePrice() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const addToCartButton = document.getElementById("addToCartButton");
-  addToCartButton.addEventListener("click", function () {
-    addToCart();
-  });
+  const sizeButtons = document.querySelectorAll(".select-size button");
+  const frostingButtons = document.querySelectorAll(".select-frosting button");
+  const topperButtons = document.querySelectorAll(".select-topper button");
 
   sizeButtons.forEach((button) => {
     button.addEventListener("click", function () {
@@ -183,6 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  const addToCartButton = document.getElementById("addToCartButton");
   addToCartButton.addEventListener("click", function () {
     addToCart();
   });
@@ -195,9 +195,12 @@ function handleButtonClick(clickedButton, categorySelector) {
   categoryButtons.forEach((button) => button.classList.remove("selected"));
   clickedButton.classList.add("selected");
 }
+
 function addToCart() {
+  console.log("Adding items to cart...");
   const cupcakeName = document.querySelector(".cupcake-name").textContent;
-  const cupcakePrice = document.querySelector(".cupcake-price").textContent;
+  const cupcakePriceString =
+    document.querySelector(".cupcake-price").textContent;
   const cupcakeSize = document.querySelector(
     ".select-size button.selected"
   ).textContent;
@@ -208,6 +211,8 @@ function addToCart() {
     ".select-topper button.selected"
   ).textContent;
   const numberOfCandles = document.getElementById("candlesQuantity").value;
+
+  const cupcakePrice = parseFloat(cupcakePriceString.slice(1));
 
   const cartItem = {
     name: cupcakeName,
@@ -221,8 +226,11 @@ function addToCart() {
   const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
   existingCart.push(cartItem);
 
+  console.log("Item added to cart", cartItem);
+
   localStorage.setItem("cart", JSON.stringify(existingCart));
 
+  console.log("Redirecting to cart page");
   window.location.href = "cart.html";
   alert("Item added to cart!");
 }
